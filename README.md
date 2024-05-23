@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект "movies" - это веб-приложение по типу кинопоиска но с единственным отличием в виде сине белого цвета, ведь я так люблю эти цвета 😉. Разработано с использованием React и сборщика Vite. Приложение позволяет пользователям просматривать каталог фильмов, фильтровать фильмы по различным критериям, а также добавлять фильмы в список избранного. Пользовательский интерфейс создан на базе Material UI, что обеспечивает современный и отзывчивый интерфейс.
 
-Currently, two official plugins are available:
+## Технологии и инструменты
+- React
+- TypeScript
+- MUI (Material UI)
+- Vite
+- ESLint
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функциональность приложения
 
-## Expanding the ESLint configuration
+📌 **Авторизация по email** - При первом входе на сайт контент недоступен, необходимо авторизоваться.
+Пользователь вводит свою почту, а затем токен:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+📌 **Каталог фильмов, избранное** - После успешной авторизации открывается доступ к сайту. Также на карточке фильма есть кнопка добавления в избранное. При повторном нажатии фильм удаляется из списка избранного:
 
-- Configure the top-level `parserOptions` property like this:
+📌 **Панель с фильтрами** - Служит для навигации по фильмам и фильтрации результатов
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+📌 **Поиск фильма** - Пользователь может использовать поисковик, чтобы найти фильмы по названию:
