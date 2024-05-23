@@ -1,0 +1,135 @@
+
+    
+// контейнер всей страницы
+.main-container 
+    padding: 0 50px
+    
+    
+// Окно логина и регистрации 
+.container 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    position: fixed
+    background-color: rgb(240, 239, 239)
+
+.modal 
+    display: flex
+    width: 350px
+    height: 350px
+    background-color: rgb(255, 255, 255)
+    justify-content: center
+    position: relative
+    
+// кнопка переключения между регистрацией и логином 
+.visible
+        width: 90px
+        height: 25px
+        position: absolute
+        right: 5px
+        top: 5px
+
+.modal-content 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    h2
+        display: flex   
+        justify-content: center
+        margin-bottom: 35px
+        font-size: 20px 
+        font-weight: bold
+    &__input-group 
+        display: flex   
+        justify-content: center
+        flex-direction: column
+        margin-bottom: 50px
+        input
+            margin-bottom: 5px
+
+.btn 
+    background-color:  #0d37e1
+    color: #fff
+    height: 35px
+    border-radius: 5px
+
+
+
+
+
+// Хедер
+.header
+    display: flex    
+    align-items: center
+    justify-content: space-between
+    height: 72px
+    background-color: $primary-color
+    &__title
+        display: flex
+        font-size: 20px
+
+    &__enter 
+        font-size: 20px
+
+
+
+
+
+
+
+// Фильтер
+
+.filter 
+    &__container
+        width: 368px
+        height: 791px
+        display: flex
+        flex-direction: column
+        padding-left: 24px
+        padding-top: 24px
+        border: 1px solid rgba(0, 0, 0, 0.50)
+    &__title-container 
+        display: flex   
+        justify-content: space-between
+        margin-bottom: 38px
+    &__exite 
+        margin-right: 24px
+    &__sort-container 
+        display: flex
+        width: 320px
+        flex-direction: column
+        align-items: flex-start
+        gap: 5.5px
+        margin-bottom: 43px
+    &__sort-select
+        width: 320px
+        height: 24px
+    &__genres-container 
+        display: flex
+        flex-direction: column
+
+
+
+// Пагинация
+.pagination
+    &__item-container 
+        display: flex
+        height: 25px
+    &__item
+        cursor: pointer
+        border: solid 1px black
+        padding: 1px 2px
+        &.active
+            background-color: $accent-color
+    &__item:not(:last-child) 
+        margin-right: 5px
+    &__item:hover
+        background-color: $secondary-color
+   
+.btn
+    border: 0.5px solid
+    background-color: $primary-color
+    height: 100%
+    cursor: pointer
